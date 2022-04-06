@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/assets/css/sign-up.css" />
+    <title>Login e Inscrição</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="" class="sign-in-form">
+            <h2 class="title">Login</h2>
+            <div class="input-field">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="name" placeholder="Usuario" />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="password" placeholder="Senha" />
+            </div>
+            <a href="/pages/dashboard.html"
+              ><input type="submit" value="Entrar" class="btn solid"
+            /></a>
+
+            <p class="social-text">Ou entre pelas plataformas sociais</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </form>
+
+          <form action="" class="sign-up-form">
+            <h2 class="title">Cadastro</h2>
+            <div class="input-field">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="name" placeholder="Usuario" />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="email" placeholder="E-mail" />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="password" placeholder="Senha" />
+            </div>
+            <input
+              type="submit"
+              id="submit-button"
+              value="Cadastrar"
+              class="btn solid"
+            />
+
+            <p class="social-text">Ou entre pelas plataformas sociais</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </form>
+          <div class="button-back">
+            <a href="/index.html">⬅ Voltar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Novo por aqui?</h3>
+            <p>
+              Faça agora seu cadastro para ter acesso a dados e informações
+              secretas no mundo SpaceX 👩‍🚀
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Criar conta
+            </button>
+          </div>
+
+          <img src="/assets/img/login.svg" class="image" alt="Login" />
+        </div>
+
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Já possui uma conta?</h3>
+            <p>Faça login para visualizar dados dos ultimos lançamentos 🚀</p>
+            <button class="btn transparent" id="sign-in-btn">Entrar</button>
+          </div>
+
+          <img src="/assets/img/register.svg" class="image" alt="Registrar" />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/39c505e3c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/sign-up.js"></script>
+  </body>
+</html>

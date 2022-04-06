@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/assets/css/dash.css" />
+    <title>Dashboard SpaceX</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <div class="logo">
+          <a href="/pages/dashboard.html">
+            <h2>SpaceX</h2>
+          </a>
+        </div>
+        <div class="search">
+          <input type="text" name="search" placeholder="Pesquisar" />
+          <label for="search"><i class="fas fa-search"></i></label>
+        </div>
+        <i class="fas fa-bell"></i>
+        <div class="user">
+          <img src="/assets/img/user-avatar.svg" alt="" />
+        </div>
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fas fa-th-large"></i>
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-rocket"></i>
+              <div>Lançamentos</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-plane-arrival"></i>
+              <div>Desembarques</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-shuttle-space"></i>
+              <div>Revoados</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-chart-bar"></i>
+              <div>Analytics</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-satellite"></i>
+              <div>Satelites</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cog"></i>
+              <div>Configurações</div>
+            </a>
+          </li>
+          <li>
+            <a href="/index.html">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <div>Sair</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="cards">
+          <div class="card">
+            <div class="card-content">
+              <div class="number">150</div>
+              <div class="card-name">Lançamentos</div>
+            </div>
+            <div class="icon-box">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="number">112</div>
+              <div class="card-name">Desembarques</div>
+            </div>
+            <div class="icon-box">
+              <i class="fa-solid fa-plane-arrival"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="number">89</div>
+              <div class="card-name">Revoados</div>
+            </div>
+            <div class="icon-box">
+              <i class="fa-solid fa-shuttle-space"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="number">$4.000.000</div>
+              <div class="card-name">Receita</div>
+            </div>
+            <div class="icon-box">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+          </div>
+        </div>
+        <div class="charts">
+          <div class="chart">
+            <h2>Ganhos (ultimos 12 meses)</h2>
+            <canvas id="lineChart"></canvas>
+          </div>
+          <div class="chart doughnut-chart">
+            <h2>Cargos</h2>
+            <canvas id="doughnut"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/39c505e3c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="/assets/js/chart1.js"></script>
+    <script src="/assets/js/chart2.js"></script>
+  </body>
+</html>

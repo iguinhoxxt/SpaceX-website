@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #14273d;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+nav {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo img {
+  width: 175px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav .menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+nav .menu-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+nav ul li {
+  padding: 20px;
+}
+
+nav ul li:not(.login)::after {
+  display: block;
+  content: " ";
+  width: 0%;
+  background-color: #4475e2;
+  transition: 0.3s;
+  height: 2px;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+nav ul li.login {
+  border: 1px solid #225692;
+  border-radius: 10px;
+  padding: 5px 40px;
+  margin-left: 30px;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+ul .login:hover {
+  background-color: #4588d4;
+  transition: 0.4s;
+}
+
+nav ul li a {
+  color: #c5c5c5;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+main .main-text {
+  width: 50%;
+  margin-bottom: 70px;
+}
+
+main .main-text h1 {
+  font-size: 3rem;
+  color: #ebe1e1;
+}
+
+main .main-text h3 {
+  color: #4475e2;
+}
+
+/* main .main-text hr {
+  width: 160px;
+  margin-left: 0px;
+} */
+
+main .main-text p {
+  color: #c5c5c5;
+  font-weight: 400;
+  margin: 20px 0 40px;
+  width: 90%;
+}
+
+main .main-text button {
+  background: transparent;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  border: 2px solid #c5c5c5;
+  transition: all 0.4s;
+}
+
+main .main-text button:hover {
+  background-color: #4588d4;
+}
+
+main .main-text .btn-watch {
+  border: 2px solid #4475e2;
+  margin: 10px;
+  color: #4475e2;
+}
+
+main .main-text .btn-watch:hover {
+  background: #4475e2;
+  color: #fff;
+}
+
+main .main-img {
+  width: 50%;
+}
+
+main .main-img img {
+  width: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+  nav .menu-icon {
+    display: block;
+    color: #fff;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0b0909cf;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    transform: translateX(-100%);
+    transition: 0.6s;
+  }
+
+  nav ul.activo {
+    transform: translateX(0%);
+  }
+
+  nav ul li.login {
+    border: 2px solid #fff;
+    margin-left: 0;
+  }
+
+  nav ul li:not(.login)::after {
+    background-color: #ebe1e1;
+  }
+
+  nav ul li a {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  main .main-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  main .main-img {
+    margin-top: 70px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  main .main-text h1 {
+    font-size: 5rem;
+  }
+
+  main .main-text hr {
+    display: inline-block;
+    width: 300px;
+    margin-left: 0px;
+  }
+
+  main .main-text h3 {
+    font-size: 2rem;
+  }
+
+  main .main-text p {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  main .main-text h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  main .main-text h1 {
+    font-size: 3.5rem;
+  }
+
+  main .main-text hr {
+    display: inline-block;
+    width: 175px;
+    margin-left: 0px;
+  }
+
+  main .main-text p {
+    display: inline-block;
+    text-align: center;
+  }
+
+  main .main-text button {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  button .btn-watch {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-right: 10px;
+  }
+}
